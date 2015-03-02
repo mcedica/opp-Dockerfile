@@ -13,7 +13,7 @@ The Dockerfile just downloads the agent RPM to a centos 7 container and installs
 4. Start a container.
 
 	```Shell
-		docker run -t -i someUser/centos:agent /bin/bash
+		docker run -t -i --name agent_1 someUser/centos:agent /bin/bash
 	```
 
 	- Note: You can detach from a running container with ctrl-p + ctrl-q.
