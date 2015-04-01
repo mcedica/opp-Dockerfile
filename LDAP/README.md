@@ -18,7 +18,7 @@ The Dockerfile just downloads the agent RPM to a centos 7 container and installs
 		or
 		
 		docker run -i -t --name agent_1 --add-host="dockerhost:<IP-Address>" someUser/centos:agent /bin/bash
-		To add an entry to the container's hosts file.
+		To add an entry to the container's hosts file. Make sure that you have the latest version of Docker installed, some package managers don't keep their version up to date.
 	```
 
 	- Note: You can detach from a running container with ctrl-p + ctrl-q.
