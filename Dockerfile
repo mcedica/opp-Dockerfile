@@ -5,5 +5,6 @@ RUN ["curl", "--silent", "-O", "https://nuxeoio-admin.okta.com/static/agents/Pro
 RUN rpm --rebuilddb; \
 	yum localinstall -y OktaProvisioningAgent-01.00.12.x86_64.rpm; \
 	rm OktaProvisioningAgent-01.00.12.x86_64.rpm;
-ENTRYPOINT ["sudo /opt/OktaProvisioningAgent/configure_agent.sh"]
+USER root	
+ENTRYPOINT ["/opt/OktaProvisioningAgent/configure_agent.sh"]
 
