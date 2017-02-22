@@ -6,6 +6,5 @@ RUN rpm --rebuilddb; \
 	yum localinstall -y OktaProvisioningAgent-01.00.12.x86_64.rpm; \
 	rm OktaProvisioningAgent-01.00.12.x86_64.rpm;
 USER root
-RUN yum install -y system-config-services
 ECMD ["/sbin/init"]
 
