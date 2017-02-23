@@ -7,5 +7,6 @@ RUN rpm --rebuilddb; \
 	rm OktaProvisioningAgent-01.00.12.x86_64.rpm;
 USER root
 RUN yum install -y initscripts
+RUN mkdir /var/run/OktaProvisioningAgent
 CMD ["/sbin/init"]
 
